@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=open-sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+body{
+background-color: #21212b;
+}
+.indexHeaderContainer{
+text-align: center;
+margin-top: 2%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.indexMainHeader{
+    font-family: 'Yellowtail','cursive',"Satisfy",sans-serif;
+    font-size: 4.5em;
+    color: #fff;
+    text-shadow: #fa73d9 0 0 8px;
+    cursor: pointer;
+}
+.indexMainHeader:hover{
+    text-shadow: #fa73d9 0 0 16px;
+}
+.indexMainSubHeader{
+    margin-top: 4%;
+    color: #fff;
+    font-family: 'open-sans',Helvetica,sans-serif;
+    font-style: italic;
+    text-shadow: #fa73d9 0 0 8px;
+    margin-bottom: 2%;
+}
+.indexMainSubFooter{
+    margin-top: 4%;
+    color: #f4b1e4;
+    font-family: 'open-sans',Helvetica,sans-serif;
+    font-size: 0.9em;
+}
+.link{
+    color: #fff;
+}
+.indexLollycontainer{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 2%;
+}
+.indexButton{
+    color: #fa73d9;
+    border:2px solid #fa73d9;;
+    border-radius: 4em;
+    height: 2%;
+    box-shadow: 0 0 6px #fa73d9;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 2s;
+    background-color: transparent;
+    font-family: 'open-sans',Helvetica,sans-serif;
+    
+}
+.indexButton:hover{
+    color: #c9f9f9;
+    border:2px solid #fa73d9;;
+    border-radius: 4em;
+    height: 2%;
+    box-shadow: 0 0 6px #fa73d9;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all .3s;
+    font-family: 'open-sans',Helvetica,sans-serif;
+    background-color: #fa73d9;
+    
+}
+.CreateMainDIv{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+.flavorSelector{
+display: flex;
+flex-direction: column;
+margin: auto;
+}
+.flavorPickerLabel{
+    height: 60px;
+    width: 60px;
+border-radius: 100%;
+margin: 20px;
+overflow: hidden;
+border: 5px solid;
+}
+.flavorPicker{
+    width: 80px;
+    height: 80px;
+    margin-top: -10px;
+    margin-left: -10px;
+
+}
+.flavorPicker:hover{
+box-shadow:#fa73d9 0 0 20px;
+}
+
+.to{
+    width: 100px;
+    background-color: #21212b;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+        color: #fff;
+        box-shadow: #fa73d9 0 0 10px;
+        font-family: 'open-sans',Helvetica,sans-serif;
+}
+.message{
+    width: 100px;
+    background-color: #21212b;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: #fa73d9 0 0 10px;
+    color: #fff;
+    font-family: 'open-sans',Helvetica,sans-serif;
+}
+.from{
+    width: 100px;
+    background-color: #21212b;
+    width: 300px;
+    height: 50px;
+    box-shadow: #fa73d9 0 0 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'open-sans',Helvetica,sans-serif;
+}
+.formLabel{
+color: #fff;
+}
+.Form{
+    margin: auto;
+    box-shadow: #121215 0 0 8px;
+}
+.sendButton{
+    box-shadow: #fa73d9 0 0 10px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50px;
+    color: #fa73d9;
+    background-color: transparent;
+    border-color: #fa73d9;
+    padding: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition: all 1s;
+
+}
+.sendButton:hover{
+    box-shadow: #121215 0 0 10px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50px;
+    color: #f5f5f5;
+    background-color: #921372;
+    border-color: #fa73d9;
+    padding: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.sendButton:disabled{
+    box-shadow: #121215 0 0 10px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50px;
+    color: #635e62;
+    background-color: transparent;
+    border-color: #635e62;
+    padding: 1em;
+    margin-bottom: 1em;
+    cursor: none;
+    transition: all 1s;
+
+}
+
+.formContainer{
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    background-color: #121215;
+}
+.formLabel{
+    font-family:'Yellowtail','cursive',"Satisfy",sans-serif ;
+}
+.lollyflavor{
+display: flex;
+
+}
+.CreateMainDIv{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-evenly;
+    
+}
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.Lolly1{
+    margin-top: 3em;
+}
+.TextContainer{
+color: #fff;
+display: flex;
+flex-direction: column;
+text-align: left;
+width: 50%;
+margin-top: 2em;
+}
+.firstText{
+    font-family:'open-sans',Helvetica,sans-serif;
+    font-size: 24px;
+    margin:.5em 0em;
+}
+.secondText{
+    font-family:'open-sans',Helvetica,sans-serif;
+    font-size: 24px;
+    background-color: #121215;
+    margin:.5em 0em;
+    padding: .5em;
+    color:#fa73d9 ;
+    border-radius: 10px;
+}
+.thirdText{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #121215;
+    justify-content: center;
+    padding: 1em .7em;
+    border-radius: 20px;
+    font-family:'open-sans',Helvetica,sans-serif;
+    font-size: 24px;
+}
+.third1Text{
+    font-family: 'Yellowtail','cursive',"Satisfy",sans-serif;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 30px;
+}
+.third2Text{
+    font-style:italic;
+    font-family: 'Dancing+Script','Yellowtail','cursive',"Satisfy",sans-serif;
+    font-size: 36px;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+.third3Text{
+    font-family: 'Yellowtail','cursive',"Satisfy",sans-serif;
+    font-size: 30px;
+    margin-left: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.forthText{
+    font-family:'open-sans',Helvetica,sans-serif;
+    color: gray;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width : 650px) {
+    .CreateMainDIv{
+        display: flex;
+        flex-direction:column ;
+        margin: auto;
+        
+    }
+    .Form{
+        margin: auto;
+        margin-top: 2em;
+        box-shadow: #121215 0 0 8px;
+        width: 90%;
+    }
+    .to{
+        width: 94%;
+        background-color: #21212b;
+        margin: 0% 2%;
+        height: 50px;
+        border-radius: 10px;
+        box-shadow: #fa73d9 0 0 10px;
+        font-family: 'open-sans',Helvetica,sans-serif;
+        color: #fff;
+    }
+    .message{
+        width: 94%;
+        background-color: #21212b;
+        margin: 0% 2%;
+        height: 100px;
+        border-radius: 10px;
+        box-shadow: #fa73d9 0 0 10px;
+        color: #fff;
+        font-family: 'open-sans',Helvetica,sans-serif;
+    }
+    .from{
+        width: 94%;
+        background-color: #21212b;
+        margin: 0% 2%;
+        height: 50px;
+        box-shadow: #fa73d9 0 0 10px;
+        border-radius: 10px;
+        color: #fff;
+        font-family: 'open-sans',Helvetica,sans-serif;
+    }
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+    .TextContainer{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        margin: 2em 0px;
+        }
+        .Lolly1{
+        margin-top: 2em;
+        }
+}

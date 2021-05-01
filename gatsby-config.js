@@ -1,8 +1,14 @@
+var baseUrl =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:8888"
+    : "https://vlollygatsbyapp.netlify.app";
+
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Virtual Lollipop`,
+    description: `Its a small full stack Application`,
+    author: `Muhammad Bilal`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -29,8 +35,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "Lollies",
+        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
+        fieldName: "Lollies",
+        // Url to query from
+        url: `${baseUrl}/.netlify/functions/create_query_lolly`,
+      },
+    },
   ],
 }
