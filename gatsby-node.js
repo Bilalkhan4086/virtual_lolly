@@ -19,7 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
       `);
 
 
-  data.lollies.getLolly.forEach((d) => {
+  data.lollies.getLollies.forEach((d) => {
     // console.log(d.first, "in")
     createPage({
       path: `lolly/${d.linkPath}`,
