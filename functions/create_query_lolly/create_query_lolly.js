@@ -41,26 +41,28 @@ const resolvers = {
 // getting lolly by index i.e by path
 getLollies: async () => {
   try {
-    var client = new faunadb.Client({ secret: process.env.FAUNADB_SERVER_SECRET });
-    const result = await client.query(
+    var adminClient = new faunadb.Client({ secret: process.env.FAUNADB_SERVER_SECRET });
+    const results = await adminClient.query(
       q.Map(
-        q.Paginate(q.Documents(q.Collection("Lollies"))),
+        q.Paginate(q.Match(q.Index('Lollies'))),
         q.Lambda(x => q.Get(x))
       )
     )
 
-    return result.data.map(d => {
+    return results.data.map(result => {
 
-      return ({
+      return {
+
         id: result.ref.id,
-       to: result.data.to,
-       from: result.data.from,
-       message: result.data.message,
-       cTop: result.data.cTop,
-       cBottom: result.data.cBottom,
-       cMiddle: result.data.cMiddle,
-       linkPath : result.data.linkPath
-      })
+            to: result.data.to,
+            from: result.data.from,
+            message: result.data.message,
+            cTop: result.data.cTop,
+            cBottom: result.data.cBottom,
+            cMiddle: result.data.cMiddle,
+            linkPath : result.data.linkPath
+
+      }
     })
   } catch (e) {
     console.log(e, "error")

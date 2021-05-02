@@ -4,7 +4,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const { data } = await graphql(`
     query MyQuery {
-        lollies {
+        Lollies {
           getLollies {
             cTop
             from
@@ -19,7 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
       `);
 
 
-  data.lollies.getLollies.forEach((d) => {
+  data.Lollies.getLollies.forEach((d) => {
     // console.log(d.first, "in")
     createPage({
       path: `lolly/${d.linkPath}`,
