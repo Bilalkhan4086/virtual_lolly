@@ -23,7 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
     // console.log(d.first, "in")
     createPage({
       path: `lolly/${d.linkPath}`,
-      component: path.resolve(`./src/templates/index.tsx`),
+      component: path.resolve(`./src/templates/index.js`),
       context: d,
     });
   });
