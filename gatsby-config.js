@@ -1,7 +1,4 @@
-var baseUrl =
-  process.env.NODE_ENV === "development"
-    ? "http://localhost:8888"
-    : "https://vlollygatsbyapp.netlify.app";
+var baseUrl = "https://vlollygatsbyapp.netlify.app";
 
 
 module.exports = {
