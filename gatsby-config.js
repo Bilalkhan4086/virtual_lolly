@@ -37,9 +37,9 @@ module.exports = {
       options: {
         typeName: "Lollies",
         // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
-        fieldName: "getLollies",
+        fieldName: "Lollies",
         // Url to query from
-        url: "http://localhost:8888/.netlify/functions/create_query_lolly/create_query_lolly",
+        url: "https://vlollygatsbyapp.netlify.app/.netlify/functions/create_query_lolly/create_query_lolly",
       },
     },
   ],
