@@ -1,4 +1,4 @@
-var baseUrl = "https://vlollygatsbyapp.netlify.app";
+// var baseUrl = "https://vlollygatsbyapp.netlify.app";
 
 
 module.exports = {
@@ -39,7 +39,7 @@ module.exports = {
         // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
         fieldName: "getLollies",
         // Url to query from
-        url: `${baseUrl}/.netlify/functions/create_query_lolly`,
+        url: "https://vlollygatsbyapp.netlify.app/.netlify/functions/create_query_lolly",
       },
     },
   ],
