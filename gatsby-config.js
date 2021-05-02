@@ -35,12 +35,11 @@ module.exports = {
     {
       resolve: "gatsby-source-graphql",
       options: {
-        // Arbitrary name for the remote schema Query type
         typeName: "Lollies",
         // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
-        fieldName: "Lollies",
+        fieldName: "getLollies",
         // Url to query from
-        url: "https://v-lolly.netlify.app/.netlify/functions/newLolly",
+        url: "http://localhost:8888/.netlify/functions/create_query_lolly/create_query_lolly",
       },
     },
   ],
