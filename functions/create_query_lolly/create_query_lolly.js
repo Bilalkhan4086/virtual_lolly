@@ -41,10 +41,10 @@ const resolvers = {
 // getting lolly by index i.e by path
 getLollies: async () => {
   try {
-    var adminClient = new faunadb.Client({ secret: process.env.FAUNADB_SERVER_SECRET });
+    var adminClient = new fauna.Client({ secret: process.env.FAUNADB_SERVER_SECRET });
     const results = await adminClient.query(
       q.Map(
-        q.Paginate(q.Match(q.Index('Lollies'))),
+        q.Paginate(q.Documents(q.Collection('Lollies'))),
         q.Lambda(x => q.Get(x))
       )
     )
