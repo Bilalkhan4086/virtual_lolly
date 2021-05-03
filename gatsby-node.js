@@ -63,7 +63,7 @@ exports.createPages = async function ({ actions, graphql }) {
       console.log(result);
       result.data.forEach((lolly) => {
         actions.createPage({
-          path: `lolly/${lolly.ref.linkPath}`,
+          path: `/lolly/${lolly.data.linkPath}`,
           component: require.resolve(`./src/templates/index.js`),
           context: {
             // Data passed to context is available
