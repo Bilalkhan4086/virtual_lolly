@@ -280,6 +280,9 @@ margin-top: 2em;
     color: gray;
     font-size: 15px;
 }
+.style{
+    font-family: 'open-sans',Helvetica,sans-serif;
+}
  @media (max-width : 650px) {
     .CreateMainDIv{
         display: flex;

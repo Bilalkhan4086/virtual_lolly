@@ -6,8 +6,8 @@ import Layout from "../components/layout"
 const NotFoundPage = () => (
   <Layout>
     {/* <Seo title="404: Not found" /> */}
-    <h1 style={{color:"white"}}>404: Not Found</h1>
-    <p style={{color:"white"}}>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <h1 className="style" style={{color:"white"}}>Sorry Your lolly is not freezzed yet</h1>
+    <p className="style" style={{color:"white"}}>You just wait a while and quickly copy the url.</p>
   </Layout>
 )
 
