@@ -36,7 +36,7 @@ const Foam = ({cTop,cBottom,cMiddle}) => {
             
         });
         console.log("Resuts =",result);
-        await navigate(`/showLolly?id=${result.data.new_lolly.linkPath}`);
+        await navigate(`/lolly/${result.data.new_lolly.linkPath}`);
 
     }
 
