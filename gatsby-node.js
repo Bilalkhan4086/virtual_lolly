@@ -64,7 +64,7 @@ exports.createPages = async function ({ actions, graphql }) {
       result.data.forEach((lolly) => {
         actions.createPage({
           path: `lolly/${lolly.ref.id}`,
-          component: require.resolve(`./src/components/LollyTemplate.tsx`),
+          component: require.resolve(`./src/components/templates/index.js`),
           context: {
             // Data passed to context is available
             // in pageContext props of the template component

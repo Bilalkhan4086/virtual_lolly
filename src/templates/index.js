@@ -15,7 +15,7 @@ const inedx = ({pageContext}) => {
                 Your lolly is freezing. Share it with this link:
                 </div>
                 <div className="secondText">
-                {`https://vlolly.net/lolly/${pageContext.linkPath}`}
+                {`https://vlollygatsbyapp.netlify.app/lolly/${pageContext.linkPath}`}
                 </div>
                 <div className="thirdText">
                 <span className="third1Text">{pageContext.to}</span>
