@@ -113,11 +113,14 @@ getLollies: async () => {
              {data:{to,from,message,cTop,cBottom,cMiddle,linkPath:shortid.generate()}})
             );
              
-          console.log("Results form server are here =",result)
           console.log("Done")
-          if(result.ref.id.length !== 0){
-            const BuildRes = await axios.post(process.env.NETLIFY_BUILD_HOOK)
-          }
+          axios.post(process.env.NETLIFY_BUILD_HOOK)
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.error(error);
+          });
           return({
             id: result.ref.id,
            to: result.data.to,
