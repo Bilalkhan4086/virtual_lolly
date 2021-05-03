@@ -72,7 +72,7 @@ exports.createPages = async function ({ actions, graphql }) {
             from: lolly.data.from,
             to: lolly.data.to,
             message: lolly.data.message,
-            CTop: lolly.data.cTop,
+            cTop: lolly.data.cTop,
             cMiddle: lolly.data.cMiddle,
             cBottom: lolly.data.cBottom,
             linkPath: lolly.data.linkPath,

@@ -19,7 +19,7 @@ mutation new_lolly($To : String!,$From : String!,$Message : String!,$cTop : Stri
 `;
 
 
-const Foam = ({cTop,cBottom,cMiddle}) => {
+const Foam = ({cTop,cMiddle,cBottom}) => {
 
     const [new_lolly] = useMutation(CREATE_LOLLY);
     const submitLollyForm = async () => {
